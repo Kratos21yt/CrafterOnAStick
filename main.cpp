@@ -26,8 +26,7 @@ static void (*_initClient)(MinecraftClient*);
 static void (*_initItems)();
 static void (*_initCreativeItems)();
 
-static void initClient(MinecraftClient* self)
-{
+static void initClient(MinecraftClient* self){
 	_initClient(self);
 	::mcClient=self;
 }
